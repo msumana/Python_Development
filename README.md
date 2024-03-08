@@ -27,10 +27,10 @@ transactions,profits. The data contains 10 columns and 3203 rows:
 
 # Analysis List
 # Product Analysis
-Conduct analysis on the data to understand the different product lines, the products lines performing best and the product lines that need to be improved.
+Conduct analysis on the data to understand the different product categories, the products categories performing best and the product lines that need to be improved.
 
 # Sales Analysis
-This analysis aims to answer the question of the sales trends of product. The result of this can help use measure the effectiveness of each sales strategy the business applies and what modificatoins are needed to gain more sales.
+This analysis aims to answer the question of the sales categories of product. The result of this can help use measure the effectiveness of each sales strategy the business applies and what modificatoins are needed to gain more sales.
 
 # Approach Used
 Data Wrangling: This is the first step where inspection of data is done to make sure NULL values and missing values are detected and data replacement methods are used to replace, missing or NULL values.
@@ -45,9 +45,9 @@ Exploratory Data Analysis (EDA): Exploratory data analysis is done to answer the
 
 # Conclusion:
 
-Business Questions To Answer
-Generic Question
-How many unique cities does the data have?
+# Business Questions To Answer
+# Generic Question
+1. How many unique cities does the data have?
 In which city is each branch?
 Product
 How many unique product lines does the data have?
@@ -74,7 +74,7 @@ What is the most common customer type?
 Which customer type buys the most?
 What is the gender of most of the customers?
 What is the gender distribution per branch?
-Which time of the day do customers give most ratings?
+Which time of the day do customers give most orders?
 Which time of the day do customers give most ratings per branch?
 Which day fo the week has the best avg ratings?
 Which day of the week has the best average ratings per branch?
