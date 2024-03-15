@@ -12,33 +12,40 @@ The dataset was obtained from the Kaggle Amazon Sales Dataset. This dataset cont
 transactions,profits. The data contains 10 columns and 3203 rows:
 
 # Column Description Data Type
- #   Column        Non-Null Count  Dtype         
+ #   Column          Dtype         Not Null   Description    
 ---  ------        --------------  -----         
- 0   Order ID      3203 non-null   object        
- 1   Order Date    3203 non-null   datetime64[ns]
- 2   Ship Date     3203 non-null   datetime64[ns]
- 3   EmailID       3203 non-null   object        
- 4   Geography     3203 non-null   object        
- 5   Category      3203 non-null   object        
- 6   Product Name  3203 non-null   object        
- 7   Sales         3203 non-null   float64       
- 8   Quantity      3203 non-null   int64         
- 9   Profit        3203 non-null   float64    
+product_id        VARCHAR(255)     NOT NULL   Product ID
+product_name      VARCHAR(2000)    NOT NULL   Name of the Product
+category          VARCHAR(2000)    NOT NULL   Category of the Product
+discounted_price  DECIMAL(10,2)    NOT NULL   Discounted Price of the Product
+actual_price      DECIMAL(10,2)    NOT NULL   Actual Price of the Product
+discount_percentage VARCHAR(255)   NOT NULL   Percentage of Discount for the Product 
+rating            DECIMAL(10,2)    NOT NULL   Rating of the Product
+rating_count      DECIMAL(10,2)    NOT NULL   Number of people who voted for the Amazon rating  
+about_product     VARCHAR(4000)    NOT NULL   Description about the Product
+user_id           VARCHAR(4000)    NOT NULL   ID of the user who wrote review for the Product
+user_name         VARCHAR          NOT NULL   Name of the user who wrote review for the Product
+review_id         VARCHAR          NOT NULL   ID of the user review
+review_title      VARCHAR          NOT NULL   Short review
+review_content    VARCHAR          NOT NULL   Long review
+img_link          VARCHAR          NOT NULL   Image Link of the Product
+product_link      VARCHAR          NOT NULL   Official Website Link of the Product
 
 # Analysis List
 # Product Analysis
 Conduct analysis on the data to understand the different product categories, the products categories performing best and the product lines that need to be improved.
 
+# Price Analysis
+
+
 # Customer Analysis
-This analysis aims to answer the question of the sales categories of product. The result of this can help use measure the effectiveness of each sales strategy the business applies and what modificatoins are needed to gain more sales.
+This analysis aims to answer the question of the products of product category.
 
 # Approach Used
 Data Wrangling: This is the first step where inspection of data is done to make sure NULL values and missing values are detected and data replacement methods are used to replace, missing or NULL values.
-Build a database
-Create table and insert the data.
-Select columns with null values in them. There are no null values in our database as in creating the tables, we set NOT NULL for each field, hence null values are filtered out.
-Feature Engineering: This will help use generate some new columns from existing ones.
-Add varchar for entering unlimited text in ratings,reviews and about product columns
+1. Build a database
+2. Create table and insert the data.
+3. Select columns with null values in them. There are no null values in our database as in creating the tables, we set NOT NULL for each field, hence null values are filtered out.
 
 # Conclusion:
 
